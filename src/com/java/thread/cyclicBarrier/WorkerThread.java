@@ -30,7 +30,8 @@ public class WorkerThread implements Runnable {
         result.addAll(partialResult);
         try {
             cyclicBarrier.await();
-            System.out.println("Finished work by -- "+threadName);
+            System.out.println("Finished work by -- "+threadName
+                    +"This is finished only after aggregator thread is done with it's work");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (BrokenBarrierException e) {

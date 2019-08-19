@@ -17,7 +17,7 @@ public class AggregatorThread implements Runnable{
     public void run() {
         System.out.println("Starting -- "+threadName+ " Waiting for 4 secs to start working");
         try {
-            sleep(4000);
+            if(result.size() == 3) sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
