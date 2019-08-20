@@ -14,7 +14,6 @@ public class PerformParallelTaskUsingLatch {
         latch.await();
         Thread.sleep(2000);
         System.out.println("All processing completed ! ");
-        //+ "All the countdown latch get intimated once the await task is run successfully");
     }
 }
 /*

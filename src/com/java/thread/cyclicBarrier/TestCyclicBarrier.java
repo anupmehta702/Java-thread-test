@@ -12,7 +12,7 @@ public class TestCyclicBarrier {
 
     public static void main(String[] args) throws InterruptedException {
         checkReusability();
-        //testCyclicBarrier();
+        testCyclicBarrier();
     }
     public static void testCyclicBarrier(){
         List<Integer> input = new ArrayList<>();
