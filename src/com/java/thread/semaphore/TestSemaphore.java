@@ -24,7 +24,8 @@ public class TestSemaphore {
                     });
                 });
         executor.shutdown();
-
+        int size =1 << 16;
+        System.out.println("Print 1 << 16 -- "+size);
     }
 }
 /*
