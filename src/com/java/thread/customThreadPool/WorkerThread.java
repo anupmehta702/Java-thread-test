@@ -17,7 +17,7 @@ public class WorkerThread implements Runnable {
             try {
                 Task task = (Task) queue.take();
                 System.out.println("Worker Thread - " + threadId + " picks up task - " + task.taskId);
-                task.run(); //using run and not thread.start
+                task.run(); //using runUsingThreadPoolExecutor and not thread.start
             } catch (RuntimeException | InterruptedException e) {
                 e.printStackTrace();
             }

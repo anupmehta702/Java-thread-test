@@ -31,7 +31,7 @@ public class Thread2 implements Runnable {
 
 
         }
-   /*public void run() {
+   /*public void runUsingThreadPoolExecutor() {
        while(sharedIntegerObject <= 10){
            synchronized (sharedIntegerObject){
                if(sharedIntegerObject % 2 != 0 ){

@@ -38,7 +38,7 @@ class TaskWithLatch implements Runnable{
     @Override
     public void run() {
         try {
-            System.out.println("In run method");
+            System.out.println("In runUsingThreadPoolExecutor method");
             //Thread.sleep(2000);
             System.out.println("countDowning the latch");
             latch.countDown();

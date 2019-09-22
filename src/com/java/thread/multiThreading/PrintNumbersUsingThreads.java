@@ -1,8 +1,17 @@
 package com.java.thread.multiThreading;
 
 public class PrintNumbersUsingThreads {
-    public static void main(String[] args) {
+    static boolean x=false;
+    PrintNumbersUsingThreads() throws Exception{
+        x=true;
+        if(1==1) {
+            throw new Exception();
+        }
 
+    }
+    public static void main(String[] args) throws Exception {
+        PrintNumbersUsingThreads p = new PrintNumbersUsingThreads();
+        System.out.println(p);
         /*
         Cant share Integer as a shared object bcoz if you change the value of integer it creates a new object
         Integer sharedIntegerObject = new Integer(1);
