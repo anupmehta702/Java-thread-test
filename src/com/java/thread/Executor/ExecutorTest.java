@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 public class ExecutorTest {
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
+    public static void main(String[] args) throws Exception {
         //threadPoolWithCallableTask();
         //threadPoolWithExecute();
         threadPoolWithSubmit();
@@ -109,5 +109,11 @@ public class ExecutorTest {
         System.out.println("Future result - "+future.get()+" Future is blocking as it blocks until result is obtained");
         System.out.println("End of method ");
         ((ExecutorService) executor).shutdown();
+        /*Output
+        In callable
+        In runnable for task id 1
+        Future result - success Future is blocking as it blocks until result is obtained
+        End of method
+         */
     }
 }
