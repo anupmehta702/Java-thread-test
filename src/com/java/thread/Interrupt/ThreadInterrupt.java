@@ -47,4 +47,20 @@ class TaskWithLatch implements Runnable{
             e.printStackTrace();
         }
     }
+    /*
+    output
+    Printing - 0
+    Printing - 1
+    Printing - 2
+    Printing - 3
+    Printing - 4
+    Printing - 5
+    Printing - 6
+    Printing - 7
+    Printing - 8
+    In interrupted Exception
+    In runUsingThreadPoolExecutor method
+    countDowning the latch
+    Finished awaiting
+     */
 }
