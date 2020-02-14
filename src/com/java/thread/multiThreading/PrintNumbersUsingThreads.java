@@ -1,5 +1,9 @@
 package com.java.thread.multiThreading;
 
+/*
+Thread 3 prints 1
+Thread 4 prints 2 and so on
+ */
 public class PrintNumbersUsingThreads {
     static boolean x=false;
     PrintNumbersUsingThreads() throws Exception{

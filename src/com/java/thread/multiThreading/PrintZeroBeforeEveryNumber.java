@@ -105,3 +105,11 @@ class ThreadThree implements Runnable {
         }
     }
 }
+/*Output
+--> 1
+ Zero
+--> 2
+ Zero
+--> 3
+ Zero
+ */

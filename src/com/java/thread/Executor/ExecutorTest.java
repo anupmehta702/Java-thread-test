@@ -10,8 +10,8 @@ import static java.util.concurrent.TimeUnit.MILLISECONDS;
 public class ExecutorTest {
     public static void main(String[] args) throws Exception {
         //threadPoolWithCallableTask();
-        //threadPoolWithExecute();
-        threadPoolWithSubmit();
+        threadPoolWithExecute();
+        //threadPoolWithSubmit();
     }
 
     private static void threadPoolWithCallableTask() throws InterruptedException {
@@ -60,10 +60,12 @@ public class ExecutorTest {
      */
 
     private static void threadPoolWithExecute() {
-        Executor executor = Executors.newFixedThreadPool(10);
+
+        Executor executor = Executors.newFixedThreadPool(3);
         IntStream.range(1, 10)
                 .forEach((i) -> {
                     executor.execute(() -> {
+                        System.out.println("started task for id - "+i);
                         try {
                             if (i == 8) {
                                 Thread.sleep(4000);

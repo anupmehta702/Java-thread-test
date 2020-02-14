@@ -1,9 +1,7 @@
 package com.java.thread.multiThreading;
 
-import org.w3c.dom.css.Counter;
-
 /*
-Problem statment -
+Problem statement -
 ThreadA - to print all numbers
 ThreadB - to print fizz if number divisible by 3
 ThreadC - to print buzz if number divisible by 5
